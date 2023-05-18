@@ -5,21 +5,21 @@
 class Gokiburi < Formula
   desc "Automatic test runs for Go projects"
   homepage "https://github.com/michenriksen/gokiburi"
-  version "0.1.3"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/michenriksen/gokiburi/releases/download/v0.1.3/gokiburi_Darwin_arm64.tar.gz"
-      sha256 "b6ca3e76fd69476bc2bd6f1dc0106f4eb553e97822e45b9474c59c6e2ec28563"
+      url "https://github.com/michenriksen/gokiburi/releases/download/v0.2.0/gokiburi_Darwin_arm64.tar.gz"
+      sha256 "6ee32411dd95fd4b895e7272385723d322bf688b362ae404bff8f37387b612e3"
 
       def install
         bin.install "gokiburi"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/michenriksen/gokiburi/releases/download/v0.1.3/gokiburi_Darwin_x86_64.tar.gz"
-      sha256 "7f0b204f517c7235d363d095951843a42390bbb9c2e66dc20ee2dbc3ab63349c"
+      url "https://github.com/michenriksen/gokiburi/releases/download/v0.2.0/gokiburi_Darwin_x86_64.tar.gz"
+      sha256 "4e16e81e78231ccc5657823c043a4f850aedec6dab90005f8643c7f57cc25114"
 
       def install
         bin.install "gokiburi"
@@ -29,16 +29,16 @@ class Gokiburi < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/michenriksen/gokiburi/releases/download/v0.1.3/gokiburi_Linux_arm64.tar.gz"
-      sha256 "245ec2d977352c11e7e80738b795502a2724d0e97ba844b4004fc6013106006d"
+      url "https://github.com/michenriksen/gokiburi/releases/download/v0.2.0/gokiburi_Linux_arm64.tar.gz"
+      sha256 "fa5c4b208427e707d35a6d288abaf54a056e5e73af243857799eb7b98afa85ba"
 
       def install
         bin.install "gokiburi"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/michenriksen/gokiburi/releases/download/v0.1.3/gokiburi_Linux_x86_64.tar.gz"
-      sha256 "5ab6484ce32fb3992f66d8de703c88a9570acef41ffdd3f0fc3a59689985eb61"
+      url "https://github.com/michenriksen/gokiburi/releases/download/v0.2.0/gokiburi_Linux_x86_64.tar.gz"
+      sha256 "691e62738485b26d5553968fcb26c3bd29cd38f8ec191063b63ddb32672e9c8a"
 
       def install
         bin.install "gokiburi"

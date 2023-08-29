@@ -11,7 +11,7 @@ class Gokiburi < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/michenriksen/gokiburi/releases/download/v0.2.1/gokiburi_Darwin_arm64.tar.gz"
-      sha256 "eec19cd0e6df651bf411db13da9e4cc3d45a3669bddb07d4a0462f19ac032cd8"
+      sha256 "eadd422c1ce9bd4e093bf1aa730f92360160afb9fe7260d6abc648750288e4e4"
 
       def install
         bin.install "gokiburi"
@@ -19,7 +19,7 @@ class Gokiburi < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/michenriksen/gokiburi/releases/download/v0.2.1/gokiburi_Darwin_x86_64.tar.gz"
-      sha256 "ebbcf11f514e548e06c52c120d4068d9c34d0b8c3a7645262be51be3773aad75"
+      sha256 "232b50b08d78d0f08a0b083e8e5fd7d4fe106001f279b7e9ab7b3605cd2ba143"
 
       def install
         bin.install "gokiburi"
@@ -30,7 +30,7 @@ class Gokiburi < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/michenriksen/gokiburi/releases/download/v0.2.1/gokiburi_Linux_arm64.tar.gz"
-      sha256 "f73a7e7d3d10ae3735e9d85ee584d98ed02123bf12de0f46ee495d42603ef3b3"
+      sha256 "a43ea186f43437cce4586bfaa551b866330ccd06dc81bb6bb6f9a1ee761e66ae"
 
       def install
         bin.install "gokiburi"
@@ -38,7 +38,7 @@ class Gokiburi < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/michenriksen/gokiburi/releases/download/v0.2.1/gokiburi_Linux_x86_64.tar.gz"
-      sha256 "8ffc46aa9190289c067a4216524cbc9dc2d3ae2ffcbcf5ae9a3808539f86f28f"
+      sha256 "a302185e41fdd5a089d490e726b278418c3e2391d4fcd20b7500563c6bcbc7c6"
 
       def install
         bin.install "gokiburi"
